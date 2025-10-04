@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação HTML</title>
+</head>
+<body>
+   <h1 id="Inicio">Formação HTML - Primeiros Passos com HTML</h1> 
+   <hr/>
+   
+   <h2>Indíce</h2>
+   <ul>
+    <li><a href="#Cliente-Servidor">Comunicação Cliente x Servidor</a></li>
+        <ol>
+            <li><a href="#Historia-Web">História da Web</a></li>
+            <li><a href="#Definicao-Clientes">O que são Clientes?</a></li>
+            <li><a href="#Definicao-Servidores">O que são Servidores?</a></li>
+            <li><a href="#Definicao-HTML">O que é HTML?</a></li>   
+        </ol>
+
+    <li><a href="#Introducao-HTML">Introdução ao HTML na Prática</a></li>   
+        <ol>
+            <li><a href="#Inspetor_Elementos">O que é e como funciona o Inspetor de Elementos?</a></li>
+            <li><a href="#Estrutura-HTML">Como é a Estrutura Básica do HTML?</a></li>
+            <li><a href="#Definicao-Tags">O que são e como funcionam as Tags?</a></li>
+            <li><a href="#Tags-Mais-Utilizadas">Quais são as Tags mais utilizadas?</a></li> 
+            <li><a href="#Definicao-Atributos">O que são Atributos das Tags?</a></li>   
+        </ol>
+
+    <li><a href="#Referencias">Referências</a></li>      
+   </ul> 
+
+   <hr/>
+   <h2 id="Cliente-Servidor" align="center">Comunicação Cliente x Servidor</h2>
+   <hr/>
+   
+   <h3 id="Historia-Web">História da Web</h3>
+   <ol>
+       <li><b>Início da Criação da Internet</b></li>
+           <p>Durante a <b><i>Guerra Fria</i></b>, foi necessário arrumar uma forma de proteger as informações e comunicações das pesquisas 
+           americanas dos soviéticos, por isso começaram as pesquisas e o desenvolvimento tecnológico com o objetivo de encontrar um meio de comunicação 
+           seguro e que sobrevivesse a um ataque nuclear.</p> 
+            
+           <p>Em 1965 conseguiram realizar uma conexão bem sucedida de 2 computadores distantes com o conceito de uma rede galáctica para acessar rapidamente 
+           dados de qualquer lugar do mundo, mas o nascimento da Internet foi considerado ao criar a <b><i>ARPANET</i></b>, no qual, governo americano 
+           permitiu que as pesquisas fossem realizadas não só pelos militares como também pelas universidades.</p> 
+            
+           <p>Em 1969, houve uma conexão realizada com sucesso entre a Universidade da Califórnia e a de Stanford e a primeira queda na Conexão, 
+           meses depois 4 universidades americanas estavam conectadas. E a partir daí, deu-se início ao uso e ao aprimoramento da <b><i>Internet</i></b>.</p>
+    
+       <li><b>Surgimento da Web</b></li>
+           <p>Em 1989, Tim Berners-Lee criou a <b><i>World Wide Web</i></b>, ou seja, o tão famoso <b><i>www</i></b> que tanto utilizamos hoje! Este sistema 
+              foi criado para conectar as universidades com o intuito de fazer com que os trabalhos e as pesquisas acadêmicas fossem utilizados ao mesmo 
+              tempo. Este cientista também é responsável pelo desenvolvimento de duas ferramentas indispensáveis para a Internet: o 
+              <b><i>Código HTML</i></b> e o <b><i>Protocolo HTTP</i></b>.</p>
+    
+           <p>Muitas vezes, <b><i>Internet</i></b> e <b><i>Web</i></b> parecem ter o mesmo significado, mas não têm, elas tem características 
+            diferentes, pois a <b><i>Internet</i></b> é uma rede que conecta milhões de computadores pelo mundo, enquanto a <b><i>Web</i></b> é uma 
+            das ferramentas utilizadas para acessar a Internet.</p>
+    
+       <li><b>World Wide Web (www)</b></li>
+           <p> Funciona como um <b><i>Sistema de Sistribuição de Documentos de Hipertexto (HTTP)</i></b> interconectados e acessíveis por meio de um 
+               <b><i>Navegador Web</i></b> conectado à Internet. Com o <b><i>www</i></b>, conseguimos acessar a <b><i>Internet</i></b> nesse formato que 
+               usamos hoje. Antes da <b><i>Web</i></b> e dos <b><i>Navegador Web</i></b>, a forma de acessar a <b><i>Internet</i></b> era por meio do 
+               <b><i>Unix</i></b>.</p>
+   </ol>
+
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h3 id="Definicao-Clientes">O que são Clientes?</h3>
+   <blockquote>
+        <b><i>Cliente</i></b> é o <b><i>Computador</i></b> que está do lado do Usuário e que foi configurado para utilizar o <b><i>Serviço</i></b> 
+        que é oferecido pelo <b><i>Servidor</i></b>, ou seja, o <b><i>Computador Cliente</i></b> é aquele que se ocupa de um <b><i>Serviço</i></b>.
+   </blockquote>
+   <br/>
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h3 id="Definicao-Servidores">O que são Servidores?</h3>
+   <blockquote>
+        <b><i>Servidor</i></b> é o <b><i>Computador</i></b> no qual foi configurado em uma <b><i>Rede</i></b> para oferecer algum tipo de 
+        <b><i>Serviço</i></b>, ou seja,  o <b><i>Computador Servidor</i></b> é aquele que oferece um <b><i>Serviço ao Usuário</i></b>.
+   </blockquote>
+   <br/>
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h3 id="Definicao-HTML">O que é HTML?</h3>
+   <blockquote>
+        <b><i>HTML (HyperText Markup Language ou "Linguagem de Marcação de Hipertexto")</i></b> é uma <b><i>Linguagem de Marcação</i></b> 
+        utilizada na construção de <b><i>Páginas na Web</i></b> que é interpretada pelos <b><i>Navegadores Web</i></b>. A tecnologia é fruto da 
+        junção entre os padrões <b><i>HyTime</i></b> e <b><i>SGML</i></b>.
+    </blockquote>
+
+    <ul>
+        <li><b>HyTime: </b> É um padrão para a <b><i>Representação Estruturada de Hipermídia</i></b> e conteúdo baseado em <b><i>Tempo</i></b>, 
+            ou seja, é visto como um <b><i>Conjunto de Eventos Concorrentes</i></b> dependentes de <b><i>Tempo (como áudio, vídeo, etc.)</i></b>, 
+            conectados por <b><i>Hiperligações (em inglês: Hyperlink e Link)</i></b>;</li>
+
+        <li><b>SGML: </b> É um padrão de formatação de textos que <b>NÃO</b> foi desenvolvido para <b><i>Hipertexto</i></b>, mas tornou-se conveniente 
+            para Transformar <b><i>Documentos em Hiper-objetos</i></b> e para <b><i>Descrever as Ligações</i></b>.</li>
+    </ul>
+        
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+
+   <h2 id="Introducao-HTML"  align="center">Introdução ao HTML na Prática</h2>
+   <hr /> 
+
+   <h3 id="Inspetor_Elementos">O que é e como funciona o Inspetor de Elementos?</a></h3>
+   <ol type="A">
+     <li><b>DevTools: </b> São <b><i>Conjuntos de Ferramentas de Desenvolvimento</i></b> integradas aos <b><i>Navegadores modernos (como Chrome, 
+         Firefox, Edge e Safari)</i></b>. Cada <b><i>Navegador</i></b> apresenta seu próprio <b><i>Painel de DevTools</i></b>, mas a ideia central 
+         é a mesma:                      
+     </li>
+
+     <br/>
+        <ol>
+            <li>Fornecer recursos para Inspecionar;</li>
+            <li>Editar e/ou Analisar a Página sem que seja necessário sair do próprio <b><i>Navegador</i></b>.</li>
+        </ol>
+
+     <br/>
+
+     <li><b>Importância do DevTools: </b></li>
+
+     <br/>
+        <ol>
+            <li>Visualizar a Estrutura do <b><i>DOM</i></b> e suas Alterações em Tempo Real;</li>
+            <li>Alterar <b><i>Propriedades e Atributos HTML</i></b> para Testar Comportamentos;</li>
+            <li>Analisar Problemas e Debugar Possíveis Erros;</li>
+            <li>Compreender o Funcionamento das Páginas;</li>
+            <li>Realizar Ajustes Rápidos.</li>
+        </ol>
+
+     <br/>   
+     <li><b>Acesso ao DevTools: </b></li>
+     
+     <br/>
+        <ol>
+            <li><b>Browser Chrome (ou Edge Chromium): </b>Clique com o botão direito em qualquer local da página e selecione 
+                “Inspecionar elemento” ou use o Atalho F12</b>;</li>
+
+            <li><b>Firefox: </b>Clique com o botão direito e escolha “Inspecionar” ou use Ctrl + Shift + C (no Windows) / Cmd + Opt + C (no Mac).
+     Navegando pelo Painel de Elementos</b>.</li>
+        </ol>        
+     <br/>
+
+     <li><b>Benefícios da DevTools: </b>A visualização da <b><i>Aba Elementos (Chrome)</i></b> ou do <b><i>Inspector (Firefox)</i></b> 
+            tem como vantagem:</li>   
+     <br/>
+        <ol>
+            <li>Mostrar a <b><i>Árvore de Elementos do HTML (DOM)</i></b> em Tempo Real;</li>
+            <li>Identificar a <b><i>Tag</i></b> onde determinado <b><i>Conteúdo</i></b> ou <b><i>Componente</i></b> está localizado;</li>
+            <li>Verificar quais são os <b><i>Atributos</i></b> utilizados (como <b><i>id</i></b> e/ou <b><i>class</i></b>)</li>
+            <li>Mostrar a <b><i>Estrutura Hierárquica</i></b>, pois fica mais fácil de entender como as <b><i>Tags</i></b> estão Aninhadas;</li>
+            <li>O <b><i>Código HTML</b></i> pode ser editado diretamento do <b><i>Navegador</i></b> através da <b><i>Aba Elementos.</i></b>.</li>  
+        </ol>
+     <br/>
+   </ol>
+
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h3 id="Estrutura-HTML">Como é a Estrutura Básica do HTML?</h3>
+   
+   <img src="Estrutura Básica HTML.png" alt="Estrutura Básica do HTML" width="500px">
+
+   <blockquote>
+    A <b><i>Estrutura Básica do HTML</i></b> é composta por algumas <b><i>Tags</i></b> importantes, mas qual é a função de cada uma delas? 
+   </blockquote>
+
+   <ol>
+    <li><b><i>&lt;!DOCTYPE html&gt; </i>: </b>Informa ao <b><i>Navegador</i></b> que esse Documento é do Tipo <b><i>HTML</i></b> e indica sua Versão;</li>
+    <li><b><i>&lt;html&gt; </i>: </b>É a <b><i>Raiz do Documento</i></b>, serve com um <b><i>Container</i></b> que engloba <b><i>TODOS</i></b> os outros <b><i>Elementos HTML</i></b>;</li>
+    <li><b><i>&lt;head&gt; </i>: </b>Compreende as <b><i>Informações do Documento</i></b> que serão <b><i></i>Interpretadas</i></b> pelo <b><i>Navegador (Metadados)</i></b>, como, por exemplo, o <b><i>&lt;title&gt;;</i></b></li>
+    <li><b><i>&lt;meta&gt; </i>: </b>Define <b><i>Metadados</i></b>, ou seja, <b><i>Informações</i></b> sobre <b><i>Dados</i></b> de um <b><i>Documento HTML</i></b>, como, por exemplo, o 
+        <b><i>Autor</i></b> ou a <b><i>Autora</i></b> do <b><i>Documento</i></b></li>
+    <li><b><i>&lt;style&gt; </i>: </b>Essa tag é usada para declarar estilos (CSS) para um documento.</li>
+    <li><b><i>&lt;body&gt; </i>: </b>É onde fica todo o conteúdo de texto, imagem e vídeos, em que o usuário ou usuária vê e interage, nele os conteúdos são estruturados pelas demais tags do HTML;</li>
+    <li><b><i>&lt;link&gt; </i>: </b>É uma tag vazia, que contém apenas atributos e faz a relação do documento HTML com recursos externos.
+        É comumente usado para vincular uma folha de estilo externa, também é usada para definir o favicon da página (ícone da aba do <b><i>Navegador</i></b>), como outros recursos;</li>
+    </ol>
+   
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h3 id="Definicao-Tags">O que são e como funcionam as Tags?</h3>
+   
+   <img src="Estrutura das Tags.webp" alt="Estrutura das Tags HTML" width="500px">
+   
+   <blockquote>
+    <b><i>O que são Tags HTML?</i></b>    
+   </blockquote>
+
+   <ul>
+    <li>São <b><i>Elementos</i></b> que <b><i>Marcam e Formatam</i></b> os <b><i>Conteúdos Textuais ou Visuais</i></b> de <b><i>Documentos HTML</i></b>.</li> 
+    <li>Elas possuem como <b><i>Características</i></b> um <b><i>Nome</i></b> e uma <b><i>Sintaxe</i></b> que são <b><i>Específicos</i></b> de cada 
+        <b><i>Tag</i></b>.</li>
+    <li>Para <b><i>Finalizar a Tag</i></b>, usa-se uma <b><i>Barra (/)</i></b>, mas há 2 Tipos de <b><i>Estrutura da Tag</i></b>: </li>
+    <br/>
+        <ol>
+            <li><b>Possui 2 Tags da Mesma: </b> Uma <b><i>Tag de Abertura Sem a Barra</i></b> e uma de <b><i>Fechamento Com a Barra</i></b>. 
+                Exemplo: <b><i>&lt;li&gt; &lt;/li&gt;</i></b>;</li>
+            <li><b>Possui Somente 1 Tag: </b> A <b><i>Tag Única</i></b> já possui a <b><i>Barra de Fechamento</i></b>. 
+                Exemplo: <b><i>&lt;br/&gt;</i></b>.</li>
+        </ol>
+   </ul>
+
+   <blockquote>
+    <b><i>Como funcionam as Tags HTML?</i></b>    
+   </blockquote>
+
+   <ul>
+    <li>Elas definem os <b><i>Conteúdos dos Documentos HTML</i></b>.</li> 
+    <li>As <b><i>Tags</i></b> vão <b><i>Mostrar</i></b> ao <b><i>Navegador</i></b> os <b><i>Conteúdos</i></b> que deverão ser <b><i>Interpretados</i></b>.</li>
+    <li>Elas possuem a seguinte <b><i>Estrutura</i></b>: </li>
+    <br/>
+        <ol>
+            <li><b>Tag de Abertura Sem a Barra: </b> Menor que - Conteúdo - Maior que. Exemplo: <b><i>&lt;p&gt;</i></b>;</li>
+            <li><b>Tag de Fechamento Com a Barra: </b> Menor que - Barra - Conteúdo -  Maior que. Exemplo: <b><i>&lt;/p&gt;</i></b>;</li>
+            <li><b>Tag Única Com a Barra de Fechamento: </b> Menor que - Conteúdo - Barra - Maior que. Exemplo: <b><i>&lt;br/&gt;</i></b>.</li>
+        </ol>
+    </ul>
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h3 id="Tags-Mais-Utilizadas">Quais são as Tags mais utilizadas?</h3>
+
+   <img src="Tags Mais Usadas.png" alt="Tags Mais Utilizadas no HTML" width="500px">
+   <img src="Estrutura Básica HTML 2.png" alt="Tags Mais Utilizadas no HTML 2" width="700px">
+   
+   <blockquote>
+    <b><i>Tags Estruturais</i></b>    
+   </blockquote>
+   
+   <ol>
+       <li><b>&lt;header&gt; &lt;/header&gt;: </b> Diferente da <b><i>Tag &lt;head&gt;</i></b>, ela determina o começo de <b><i>Todo o Código</i></b> e tem a função de <b><i>Estruturar Todo 
+                o Texto</i></b> e seu trabalho como um todo;</li>
+       <li><b>&lt;main&gt; &lt;/main&gt;: </b> Define o <b><i>Conteúdo Central da Página</i></b>, ainda que este não esteja localizado de fato no centro;</li>
+       <li><b>&lt;footer&gt; &lt;/footer&gt;: </b> Define o <b><i>Rodapé da Página</i></b>, ou seja, são as <b><i>Informações Finais da Página</i></b>, pode colocar qualquer tipo de informação, 
+            mas geralmente é colocado a <b><i>Data, Informações de Direito Reservado e Redes Sociais</i></b>;</li>
+       <li><b>&lt;section&gt; &lt;/section&gt;: </b> Cria <b><i>Seções na Página</i></b>;</li>
+       <li><b>&lt;article&gt; &lt;/article&gt;: </b> Para quem tem uma <b><i>Página</i></b> mais voltada para <b><i>Conteúdos</i></b>, ou mesmo um <b><i>Blog</i></b>, a 
+        <b><i>Tag &lt;article&gt;</i></b> é muito importante para a <b><i>Separação de Informações</i></b> para que o <b><i>Artigo</i></b> possa se destacar;</li>
+       <li><b>&lt;aside&gt; &lt;/aside&gt;: </b> São <b><i>Tags</i></b> que relacionam <b><i>Conteúdos de uma Seção</i></b> com algum <b><i>Conteúdo da Página</i></b>, ou seja, 
+                ela organiza para que as <b><i>Informações</i></b> fiquem bem disponibilizadas;</li>
+       <li><b>&lt;nav&gt; &lt;/nav&gt;: </b> Criar <b><i>Menus</i></b> ou ter <b><i>Informações</i></b> dispostas de <b><i>Maneira Organizada</i></b>;</li>
+       <li><b>&lt;div&gt; &lt;/div&gt;: </b> Serve para <b><i>Separar os Conteúdos</i></b>, antigamente era colocada com um <b><i>Atributo "class" ou "id"</i></b> para identificar se era um 
+        <b><i>Rodapé</i></b> ou um <b><i>Cabeçalho</i></b>, por exemplo: <b><i>&lt;div class="cabecalho"&gt; &lt;/div&gt;:</i></b>, mas como tinha muitas variações nos nomes das <b><i>Classes</i></b>, foram
+        criadas <b><i>Tags Espacíficas</i></b> para cada parte da <b><i>Página</i></b>, mas a <b><i>Tag &lt;div&gt; &lt;/div&gt;</i></b> ainda é muito utilizada para auxiliar <b><i>Comandos CSS</i></b>
+        em <b><i>Partes Específicas da Página HTML</i></b>.</li>
+   </ol>
+
+   <blockquote>
+    <b><i>Tags de Conteúdo</i></b>    
+   </blockquote>
+
+   <ol>
+    <li><b>Tags de Título:</b> São as <b><i>Tags</i></b> que mudam o <b><i>Tamanho do Título</i></b>, são as <b><i>Tags &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e &lt;h6&gt;</i></b> ;</li>
+    <li><b>Tags de Texto:</b> São as <b><i>Tags</i></b> que vão <b><i>"Pular a Linha e Alinhar o Texto"</i></b> ou <b><i>Destacar um Texto ou Palavra</i></b>;</li>
+    <li><b>Tags de Link:</b> Essa <b><i>Tag</i></b> pode <b><i>Linkar Qualquer Coisa</i></b>, dentro da mesma página, ou mesmo alguns elementos que não são da mesma página, 
+        é utilizada a <b><i>Tag &lt;a href="..."&gt; &lt;/a&gt;</i></b>;</li>
+    <li><b>Tags de Multimídia:</b> É utilizada para <b><i>Incorporar Imagens, Vídeos, Sons, Iframes</i></b>, e qualquer outro tipo de multimídia, para <b><i>Imagens</i></b>, por exemplo, é utilizada a 
+        <b><i>Tag &lt;img&gt; &lt;/img&gt;</i></b>, sem fechamento;</li>
+    <li><b>Tags de Listas:</b> Organiza informações que são pensadas para <b><i>Determinar uma Ordem</i></b>, podendo ser <b><i>Numérica (&lt;ol&gt; &lt;/ol&gt;) ou Não (&lt;ul&gt; &lt;/ul&gt;)</i></b>, 
+        mas ambas precisam da <b><i>Tag &lt;li&gt; &lt;/li&gt;</i></b> para Listar os Itens;</li>
+    <li><b>Tags de Formulário:</b> As <b><i>Tags de Formulário (&lt;form&gt; &lt;/form&gt;)</i></b> são indicadas para colher <b><i>Informações dos Usuários</i></b> por meio de 
+        <b><i>Dados Simples</i></b> que são colocados na <b><i>Tag &lt;input&gt; &lt;/input&gt;</i></b>, e são definidos pelo <b><i>Tipo (type) de Informação</i></b> a ser colhida 
+        (<b><i>Nome - name, Email ou Senha - password</i></b>, por exemplo), ou na <b><i>Tag &lt;textarea&gt; &lt;/textarea&gt;</i></b> para <b><i>Informações do Tipo Mensagens, 
+        Opiniões ou Reclamações</i></b>.</li>
+   </ol>
+
+   <blockquote>
+    <b><i>Tags de Texto</i></b>    
+   </blockquote>
+
+   <ol>
+       <li><b>&lt;p&gt; &lt;/p&gt;: </b> Define o <b><i>Início do Parágrafo</i></b>;</li>
+       <li><b>&lt;span&gt; &lt;/span&gt;: </b> É utilizada em elementos como <b><i>Imagens, Legendas ou Informações</i></b> que vão somar ao texto, formando uma espécie de <b><i>Container</i></b>;</li>
+       <li><b>&lt;pre&gt; &lt;/pre&gt;: </b> Utilizada principalmente para a utilização de <b><i>Textos Pré Formatados</i></b>, como <b><i>Códigos</i></b>, por exemplo;</li>
+       <li><b>&lt;b&gt; &lt;/b&gt;: </b> Transforma <b><i>Todo o Texto</i></b> dentro desse intervalo em <b><i>Negrito</i></b>;</li>
+       <li><b>&lt;i&gt; &lt;/i&gt;: </b> Transforma <b><i>Todo o Texto</i></b> dentro desse intervalo em <b><i>Itálico</i></b>;</li>
+       <li><b>&lt;br/&gt;: </b> <b><i>Tag de HTML</i></b> utilizada para <b><i>Quebra de Linha</i></b> e que não necessita de fechamento;</li>
+       <li><b>&lt;hr/&gt;: </b> Formação de <b><i>Linha Horizontal</i></b> no texto;</li>
+   </ol>
+
+   <blockquote>
+    <b><i>Tags de Estilo</i></b>    
+   </blockquote>
+
+   <ol>
+       <li><b>&lt;style&gt; &lt;/style&gt;: </b> Deve ser posicionada após a <b><i>Tag &lt;head&gt; &lt;/head&gt;</i></b> e serve para colocar os <b><i>Comandos CSS</i></b>;</li>
+       <li><b>&lt;script&gt; &lt;/script&gt;: </b>  Pode ser posicionada em qualquer local, sendo recomendada após o <b><i>&lt;footer&gt; &lt;/footer&gt;</i></b> por conta da linguagem, e 
+        serve para colocar os <b><i>Comandos do JavaScript</i></b>.</li>
+   </ol>
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h3 id="Definicao-Atributos">O que são Atributos das Tags?</h3>
+ 
+   <ul>
+    <li><b>Atributos</b> são utilizados para personalizar as <b><i>Tags</i></b>, e vão dar todas as <b><i>Informações</i></b> que de fato são indicadas.</i></b>.</li> 
+    <li>Os <b><i>Atributos</i></b> mais utilizados são:</li>
+    <br/>
+        <ol>
+            <li><b>class=”…“: </b> É a <b><i>Classe</i></b> de um <b><i>Elemento</i></b>, podendo ser utilizada em um ou mais <b><i>Elementos</i></b>;</li>
+            <li><b>id=”…“:    </b> É o <b><i>Id</i></b> de um <b><i>Elemento</i></b>, podendo ser utilizada somente em um <b><i>Elemento</i></b>;</li>
+            <li><b>style=”…”: </b> Inclusão de <b><i>Elementos CSS</i></b>, que vão dar <b><i>Estilos</i></b> ao <b><i>HTML</i></b>;</li>
+            <li><b>lang=”…”:  </b> É o <b><i>Idioma Principal</i></b>;</li>
+            <li><b>title=”…”: </b> É o <b><i>Título do Elemento</i></b>;</li>            
+            <li><b>alt=”…”:   </b> Geralmente, é aplicado em <b><i>Técnicas de SEO</i></b> para criar <b><i>Textos Alternativos</i></b> nas <b><i>Imagens</i></b>;</li>
+            <li><b>hidden:    </b> Utilizado para ocultar <b><i>Elementos</i></b>;</li>
+            <li><b>align=”…”: </b> Utilizado para alinhar <b><i>Textos e/ou Outros Elementos</i></b>;</li>            
+            <li><b>width=”…”: </b> Define a <b><i>Largura do Elemento</i></b>;</li>
+            <li><b>height=”…”: </b> Define a <b><i>Altura do Elemento</i></b>.</li>
+        </ol>
+    </ul>
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+
+   <h2 id="Referencias">Referências</h2>
+   <p><a href="https://utechdigital.com/a-historia-da-web/" target="_blank">A história da Web.</a></p>
+   <p><a href="https://www.ultra64.com.br/o-que-sao-e-quais-as-diferencas-entre-cliente-e-servidor/" target="_blank">
+    O que são e quais as diferenças entre Cliente e Servidor?</a></p>
+   <p><a href="https://pt.wikipedia.org/wiki/HTML" target="_blank">HTML</a></p>
+   <p><a href="https://startbit.com.br/pt/article/ferramentas-para-desenvolvedores-devtools-e-inspecao-de-elementos" target="_blank">
+    Domine as DevTools: Guia Prático para Inspecionar Elementos
+   </a></p>
+   <p><a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica#ltmetagt" target="_blank">
+    O que é o HTML e suas tags? Parte 1: estrutura básica
+   </a></p>
+   <p><a href="https://blog.xpeducacao.com.br/tags-html/" target="_blank">
+    O que são Tags HTML e como elas funcionam na prática?
+   </a></p>
+   <p><a href="https://www.brasilcode.com.br/tags-html-conhecas-as-principais-e-mais-usadas/" target="_blank">
+    Tags HTML: Conheça as Principais e Mais Usadas
+   </a></p>
+   <p><a href="https://www.brasilcode.com.br/html-semantico-o-que-e-por-que-usar-e-principais-tags/" target="_blank">
+    HTML Semântico: O que é, Por que Usar e Principais Tags
+   </a></p>
+   <p><a href="https://pensandonaweb.com.br/aprendendo-html-a-linguagem-da-web/" target="_blank">
+    Aprendendo HTML, a linguagem da web
+   </a></p>
+   <p><a href="https://www.educba.com/basic-html-tags/" target="_blank">
+    Basic HTML Tags
+   </a></p>
+   <small><a href="#Inicio">Início</a></small>        
+   <br/><br/>
+   <hr/>
+   <br/>
+  </body>
+</html>
