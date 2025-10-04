@@ -48,7 +48,7 @@ public class SimulacaoBancaria {
                     
                 case 0:
                   System.out.println("Programa encerrado.");
-                  continuar = false;  // Atualiza a variável de controle para encerrar o loop
+                  continuar = false;
                   break;
                     
                 default:

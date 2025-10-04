@@ -6,28 +6,28 @@ public class ContaTerminal {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		String Agencia, Nome_Cliente;
-		int Numero;
-		double Saldo;
+		String agencia, nomeCliente;
+		int numero;
+		double saldo;
 		
 		System.out.println("Por favor, informar os dados abaixo:");
 		
 		System.out.print("\nNome: ");
-		Nome_Cliente = sc.nextLine();
+		nomeCliente = sc.nextLine();
 		
 		System.out.print("Agência: ");
-		Agencia = sc.nextLine();
+		agencia = sc.nextLine();
 		
 		System.out.print("Número: ");
-		Numero = sc.nextInt();
+		numero = sc.nextInt();
 		
 		System.out.print("Saldo: R$ ");
-		Saldo = sc.nextDouble();
+		saldo = sc.nextDouble();
 		
-		System.out.printf("\nOlá " + Nome_Cliente + ", obrigado por criar uma conta em nosso banco, sua Agência é " + Agencia + ", Conta " + Numero);
-		System.out.printf(" e seu Saldo de R$ %.2f.", Saldo);
-		System.out.printf(" já está disponível.");
-		
+	System.out.printf("\nOlá %s, obrigado por criar uma conta em nosso banco, " +
+			"sua Agência é %s, Conta %s e seu Saldo de R$ %.2f já está disponível.",
+			nomeCliente, agencia, numero, saldo);
+
 		sc.close();
 	}	   
 }
