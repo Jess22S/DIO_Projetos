@@ -1,0 +1,109 @@
+.contato-maps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.maps-container {
+  flex: 1 1 400px;
+  min-height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.info-contato {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.info-contato h2 {
+  color: #0a4d68;
+  margin-bottom: 10px;
+}
+
+.info-contato p {
+  font-size: 16px;
+  color: #088395;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  .contato-maps {
+    flex-direction: column;
+  }
+  .maps-container, .info-contato {
+    flex: 1 1 100%;
+  }
+}
+
+/* Estilo geral do formulário */
+form {
+  max-width: 500px;       /* largura máxima do formulário */
+  margin: 50px auto;      /* centraliza horizontalmente */
+  padding: 20px;          /* espaço interno */
+  border: 1px solid #ccc; /* borda leve */
+  border-radius: 8px;     /* cantos arredondados */
+  background-color: #f9f9f9; /* cor de fundo suave */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra leve */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo dos labels */
+form label {
+  display: block;        /* força cada label em linha separada */
+  margin-bottom: 5px;    /* espaço abaixo do texto */
+  font-weight: bold;     /* deixa o texto em negrito */
+}
+
+/* Estilo dos inputs e textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;              /* ocupa toda a largura do form */
+  padding: 10px;            /* espaço interno */
+  margin-bottom: 15px;      /* espaço abaixo de cada campo */
+  border: 1px solid #ccc;   /* borda padrão */
+  border-radius: 5px;       /* cantos arredondados */
+  box-sizing: border-box;   /* inclui padding na largura total */
+  font-size: 1em;
+  transition: border-color 0.3s; /* animação suave */
+}
+
+/* Efeito ao focar no campo */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #007BFF;  /* muda a cor da borda */
+  outline: none;           /* remove o contorno padrão */
+  box-shadow: 0 0 5px rgba(0,123,255,0.5); /* sombra suave */
+}
+
+/* Estilo do botão de envio */
+form input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3; /* cor mais escura ao passar o mouse */
+}

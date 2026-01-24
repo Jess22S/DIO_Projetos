@@ -1,0 +1,125 @@
+.header {
+    height: 240px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 15px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0a4d68;
+}
+
+.exame-section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.exame-section h2 {
+  margin-bottom: 15px;
+  color: #088395;
+}
+
+.exame-section ul {
+  list-style: none;
+}
+
+.exame-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.exame-section li span {
+  font-weight: bold;
+  color: #0a4d68;
+}
+
+.especialidades {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.especialidades h1 {
+  margin-bottom: 25px;
+  color: #0a4d68;
+}
+.especialidade-section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.especialidade-section h2 {
+  margin-bottom: 15px;
+  color: #088395;
+}
+
+.especialidade-section ul {
+  list-style: none;
+}
+
+.especialidade-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.especialidade-section li span {
+  font-weight: bold;
+  color: #0a4d68;
+}
+
+
+/* Horários */
+
+.horarios {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.horarios h2 {
+  margin-bottom: 15px;
+  color: #088395;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+table thead {
+  background-color: #0a4d68;
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f6f9;
+}

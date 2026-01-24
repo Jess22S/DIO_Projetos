@@ -1,0 +1,53 @@
+.header {
+    height: 330px;
+}
+
+.institucional {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.institucional h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0a4d68;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #088395;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
