@@ -48,6 +48,10 @@
   }
 }
 
+#mensagem {
+  resize: none;
+}
+
 /* Estilo geral do formulário */
 form {
   max-width: 500px;       /* largura máxima do formulário */
