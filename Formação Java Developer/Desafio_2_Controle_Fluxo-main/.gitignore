@@ -1,1 +1,38 @@
 /bin/
+
+# Compilados e binários
+*.class
+*.jar
+*.war
+*.ear
+
+# Diretórios de build
+/build/
+target/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# IDEs
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+.nb-gradle/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
