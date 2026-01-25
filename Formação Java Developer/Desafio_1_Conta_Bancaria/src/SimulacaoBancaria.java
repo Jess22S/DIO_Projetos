@@ -15,44 +15,44 @@ public class SimulacaoBancaria {
         	System.out.println("3 - Consultar Saldo");
         	System.out.println("4 - Encerrar"); 
         	
-            System.out.print("\nPor favor, informar o numero da operaçao que deseja realizar: ");
+            System.out.print("\nPor favor, informar o número da operaçao que deseja realizar: ");
             int opcao = scanner.nextInt();              
           
             switch (opcao) {
                 case 1:
-                	System.out.println("\nPor favor, informar o valor a ser depositado: R$ ");
+                	System.out.printf("\nPor favor, informar o valor a ser depositado: R$ ");
                 	deposito = scanner.nextDouble();
                 	
                 	saldo += deposito;
                 	
-                	System.out.printf("Saldo atual: R$ %.1f\n", saldo);
+                	System.out.printf("Saldo atual: R$ %.2f\n", saldo);
                 	
                   break;                 
                     
                 case 2:
-                	System.out.println("\nPor favor, informar o valor a ser sacado: R$ ");
+                	System.out.printf("\nPor favor, informar o valor a ser sacado: R$ ");
                 	sacar = scanner.nextDouble();
                 	
                 	if (saldo >= sacar) {
                 		saldo -= sacar;                		
-                		System.out.printf("Saldo atual: R$ %.1f\n", saldo);
+                		System.out.printf("\nSaldo atual: R$ %.2f\n", saldo);
                 	}else {
-                		System.out.printf("Saldo insuficiente! :-(\n");
+                		System.out.printf("\nSaldo insuficiente! :-(\n");
                 	}
                 	
                     break;
                     
                 case 3:
-                	System.out.printf("\nSaldo atual: R$ %.1f", saldo);
+                	System.out.printf("\nSaldo atual: R$ %.2f\n", saldo);
                   break;
                     
-                case 0:
+                case 4:
                   System.out.println("Programa encerrado.");
                   continuar = false;
                   break;
                     
                 default:
-                  System.out.println("Opção inválida. Tente novamente.");
+                  System.out.println("Opção inválida. Tente novamente!");
             }
         }
         scanner.close();
