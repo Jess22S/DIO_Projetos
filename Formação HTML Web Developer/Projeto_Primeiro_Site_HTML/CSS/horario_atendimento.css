@@ -16,15 +16,22 @@ h1 {
 
 .exame-section {
   background-color: #ffffff;
-  padding: 25px;
+  padding: 0px 25px 0px 0px;
   margin-bottom: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.exame-section h2 {
+.exame-section h1 {
   margin-bottom: 15px;
   color: #088395;
+}
+
+.exame-section h2 {
+  margin-bottom: 15px;
+  padding-left: 34px;
+  color: #088395;
+  text-align: left;
 }
 
 .exame-section ul {
@@ -41,7 +48,7 @@ h1 {
 
 .exame-section li span {
   font-weight: bold;
-  color: #0a4d68;
+  color: #0a4d68;  
 }
 
 .especialidades {
@@ -60,7 +67,7 @@ h1 {
 }
 .especialidade-section {
   background-color: #ffffff;
-  padding: 25px;
+  padding: 0px 25px 0px 0px;
   margin-bottom: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -86,6 +93,11 @@ h1 {
 .especialidade-section li span {
   font-weight: bold;
   color: #0a4d68;
+}
+
+.content {
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 
