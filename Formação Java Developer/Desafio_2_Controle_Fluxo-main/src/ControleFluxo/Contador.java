@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class Contador {
 	public static void main(String[] args) {
 		Scanner terminal = new Scanner(System.in);	
-		
-		int trocaParametro = 0;
-		
+				
 		System.out.printf("Digite o primeiro parâmetro: ");
 		int parametroUm = terminal.nextInt();
 		
@@ -15,7 +13,7 @@ public class Contador {
 		int parametroDois = terminal.nextInt();		
 		
 		try {			
-			contar(parametroUm, parametroDois, trocaParametro);	
+			contar(parametroUm, parametroDois);	
 		} catch (Exception e) {
 			System.out.println("erro: " + e);
 		}
@@ -23,9 +21,9 @@ public class Contador {
 		terminal.close();
 	}
 		
-	static void contar(int parametroUm, int parametroDois, int trocaParametro) throws ParametrosInvalidosException {
+	static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
 		if (parametroUm > parametroDois) {
-			trocaParametro = parametroUm;
+			int trocaParametro = parametroUm;
 			parametroUm = parametroDois;
 			parametroDois = trocaParametro;
 		}
