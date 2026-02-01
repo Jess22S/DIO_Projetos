@@ -23,9 +23,7 @@ public class Contador {
 		
 	static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
 		if (parametroUm > parametroDois) {
-			int trocaParametro = parametroUm;
-			parametroUm = parametroDois;
-			parametroDois = trocaParametro;
+			throw new ParametrosInvalidosException();
 		}
 		
 		int contagem = parametroDois - parametroUm;
